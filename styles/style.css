@@ -9,4 +9,95 @@
     font-style: normal;
   }
 
-  
+  /* shared styles  */
+.display-flex{
+    display: flex;
+}
+
+.primary-btn{
+    background-color: #FF900E;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.primary-btn > a{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* header styles  */
+.header{
+    width: 100%;
+    background-color: #FFF4E6;
+    border-radius: 8px;
+}
+
+/* nav styles */
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar h3{
+    font-size: 3rem;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.25rem;
+    color: #6C4542;
+}
+
+/* Banner styles starts here  */
+
+.banner-content{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-size: 4rem;
+}
+
+.banner-image img{
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+
+/* Responsive Styles  */
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .navbar > ul{
+        flex-direction: column;
+    }
+
+    .banner-title{
+        font-size: 3rem;
+    }
+    .banner-image{
+        width: 100%;
+    }
+
+}
